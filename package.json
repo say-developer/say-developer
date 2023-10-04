@@ -1,0 +1,24 @@
+{
+  "name": "say-developer",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:coverage": " npm run test:coverage --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "rebuild": "npm run rebuild --workspaces --if-present",
+    "docker:build": "docker build -t say-developer .",
+    "docker:run": "docker run -p 3000:3000 -d say-developer",
+    "start": "npm run start --workspaces --if-present",
+    "start:clean": "npm run rebuild && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
