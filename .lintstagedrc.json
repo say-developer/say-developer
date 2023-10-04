@@ -1,0 +1,4 @@
+{
+  "*.{md,json,ts,tsx,js}": "prettier",
+  "*.{ts,tsx,js}": "eslint --max-warnings=0"
+}
