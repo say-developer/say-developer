@@ -8,6 +8,11 @@
   "scripts": {
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "prettier:cli": "npm run prettier:cli --workspaces --if-present",
+    "prettier:check": "npm run prettier:check --workspaces --if-present",
+    "prettier:fix": "npm run prettier:fix --workspaces --if-present",
+    "eslint:fix": "npm run eslint:fix --workspaces --if-present",
+    "eslint": "npm run  eslint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
     "test:coverage": " npm run test:coverage --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
